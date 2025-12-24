@@ -39,9 +39,7 @@ class Solution:
             h[num] = i
 
         for i, num in enumerate(nums):
-            print(target, num)
             desired = target - num
-            print(desired, h[desired], i)
             if desired in h and h[desired] != i:
                 return i, h[desired]
 
